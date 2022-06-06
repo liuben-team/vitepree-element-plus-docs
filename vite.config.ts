@@ -7,7 +7,7 @@ import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 
 import Unocss from 'unocss/vite'
-import { presetUno, presetIcons, /* presetAttributify */ } from 'unocss'
+import { presetUno, presetIcons, presetAttributify } from 'unocss'
 
 export default defineConfig({
   resolve: {
@@ -42,7 +42,7 @@ export default defineConfig({
     Unocss({
       presets: [
         presetUno(),
-        // presetAttributify(),
+        presetAttributify(),
         presetIcons()
       ]
     }),
